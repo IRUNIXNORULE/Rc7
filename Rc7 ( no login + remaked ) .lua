@@ -117,7 +117,7 @@ clear.MouseButton1Down:connect(function()
     input.Text = " "
 end)
 
-open.Name = "open"
+open.Name = "Script Finder"
 open.Parent = mainpage
 open.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 open.BackgroundTransparency = 1.000
@@ -126,7 +126,7 @@ open.BorderSizePixel = 0
 open.Position = UDim2.new(0.598853886, 0, 0.774104655, 0)
 open.Size = UDim2.new(0, 99, 0, 20)
 open.Font = Enum.Font.ArialBold
-open.Text = "Open"
+open.Text = "Script Finder"
 open.TextColor3 = Color3.fromRGB(20, 212, 255)
 open.TextSize = 14.000
 open.MouseButton1Down:connect(function()
@@ -165,7 +165,7 @@ dex.MouseButton1Down:connect(function()
     loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/Dex%20Explorer.txt"))()
 end)
 
-close_2.Name = "close"
+close_2.Name = "Close"
 close_2.Parent = mainpage
 close_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 close_2.BackgroundTransparency = 1.000
@@ -181,7 +181,7 @@ close_2.MouseButton1Down:connect(function()
     mainpage.Visible = false
 end)
 
-minimize_2.Name = "minimize"
+minimize_2.Name = "Minimize"
 minimize_2.Parent = mainpage
 minimize_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 minimize_2.BackgroundTransparency = 1.000
