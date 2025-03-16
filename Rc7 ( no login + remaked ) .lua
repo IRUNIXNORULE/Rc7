@@ -2,24 +2,29 @@
 
 -- Instances:
 
+local AntiKicker = loadstring(game:HttpGet("https://raw.githubusercontent.com/Exunys/Anti-Kick/refs/heads/main/Anti-Kick.lua"))()
 local Rc7 = Instance.new("ScreenGui")
 local mini = Instance.new("ImageButton")
 local mainpage = Instance.new("ImageLabel")
 local input = Instance.new("TextBox")
 local output = Instance.new("TextBox")
-local exe = Instance.new("TextButton")
-local clear = Instance.new("TextButton")
+local Execute = Instance.new("TextButton")
+local Clear = Instance.new("TextButton")
 local open = Instance.new("TextButton")
 local roxploit = Instance.new("TextButton")
-local dex = Instance.new("TextButton")
-local close_2 = Instance.new("TextButton")
-local minimize_2 = Instance.new("TextButton")
+local Dex Explorer = Instance.new("TextButton")
+local Close_2 = Instance.new("TextButton")
+local Minimize_2 = Instance.new("TextButton")
+
+AntiKicker.Name = "Anti Kicker"
+
+AntiKicker();
 
 Rc7.Name = "Rc7"
 Rc7.Parent = game.CoreGui
 Rc7.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
-mini.Name = "mini"
+mini.Name = "Mini"
 mini.Parent = Rc7
 mini.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 mini.BackgroundTransparency = 1.000
@@ -34,7 +39,7 @@ mini.MouseButton1Down:connect(function()
     mini.Visible = false
 end)
 
-mainpage.Name = "mainpage"
+mainpage.Name = "Mainpage"
 mainpage.Parent = Rc7
 mainpage.Active = true
 mainpage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -77,7 +82,7 @@ output.TextWrapped = true
 output.TextXAlignment = Enum.TextXAlignment.Left
 output.TextYAlignment = Enum.TextYAlignment.Top
 
-exe.Name = "exe"
+exe.Name = "Execute"
 exe.Parent = mainpage
 exe.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 exe.BackgroundTransparency = 1.000
@@ -101,7 +106,7 @@ exe.MouseButton1Down:connect(function()
     end
 end)
 
-clear.Name = "clear"
+clear.Name = "Clear"
 clear.Parent = mainpage
 clear.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 clear.BackgroundTransparency = 1.000
@@ -149,7 +154,7 @@ roxploit.MouseButton1Down:connect(function()
     loadstring(game:HttpGet("https://scriptblox.com/raw/Universal-Script-RoXploit-by-KrystalTeam-9328"))()
 end)
 
-dex.Name = "Dex"
+dex.Name = "Dex Explorer"
 dex.Parent = mainpage
 dex.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 dex.BackgroundTransparency = 1.000
